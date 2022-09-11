@@ -66,3 +66,12 @@ userAge2 = Number(userAge2);
 console.log(userAge2);
 console.log(typeof userAge2);
 
+
+
+
+let scoops = 10;
+while (scoops > 0) {
+	document.write("Another scoop!<br>");
+	scoops = scoops - 1;
+}
+document.write("Life without ice cream isn't  the same");
