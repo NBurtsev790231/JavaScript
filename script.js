@@ -75,6 +75,17 @@ while (scoops > 0) {
 	scoops = scoops - 1;
 }
 document.write("Life without ice cream isn't  the same");
-if (scoops < 2) {
-	alert("ise cream is running low!");
+
+
+
+let name = "Joe";
+let i = 0;
+while (i < 4) {
+	document.write("Happy Birthday to you. <br>");
+	i = i + 1;
 }
+document.write("Happy Birthday dear" + name + ", <br>");
+
+
+
+
