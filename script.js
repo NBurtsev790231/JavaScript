@@ -75,3 +75,6 @@ while (scoops > 0) {
 	scoops = scoops - 1;
 }
 document.write("Life without ice cream isn't  the same");
+if (scoops < 2) {
+	alert("ise cream is running low!");
+}
