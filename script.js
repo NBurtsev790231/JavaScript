@@ -68,7 +68,7 @@ console.log(typeof userAge2);
 
 
 
-
+//мороженое
 let scoops = 10;
 while (scoops > 0) {
 	document.write("Another scoop!<br>");
@@ -76,7 +76,7 @@ while (scoops > 0) {
 }
 document.write("Life without ice cream isn't  the same.<br><br>");
 
-
+//день рождения
 let name = "Joe";
 let i = 0;
 while (i < 4) {
@@ -85,6 +85,21 @@ while (i < 4) {
 }
 document.write("Happy Birthday dear" + " " + name + "!");
 
+
+//песня тест
+let word = "bottles";
+let count = 99;
+while (count > 0) {
+	console.log(count + " " + word + " of bear on the wall");
+	console.log(count + " " + word + " of bear,");
+	console.log(count + " " + word + " Take one down, pass it around");
+	count = count - 1;
+	if (count > 0) {
+		console.log(count + " " + word + " of bear on the wall.");
+	} else {
+		console.log("No more " + word + " of bear on the wall.");
+	}
+}
 
 
 
