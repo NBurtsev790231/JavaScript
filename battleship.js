@@ -11,7 +11,7 @@ let isSunk = false;
 
 while (isSunk == false) {
 	guess = prompt("Ready , aim, fire! (enter a number from 0-6) : ");
-	if (guess < 0 || guess > 6) {
+	if (guess < 0 || guess > 7) {
 		alert("Please entaer a valid cell number!");
 	} else {
 		guesses = guesses + 1;
