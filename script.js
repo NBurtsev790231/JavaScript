@@ -1,4 +1,3 @@
-
 'use strict'
 //булевое значение
 let willYou = true;
