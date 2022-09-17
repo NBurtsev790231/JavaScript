@@ -10,9 +10,9 @@ let guesses = 0;
 let isSunk = false;
 
 while (isSunk == false) {
-	guess = prompt("Ready , aim, fire! (enter a number from 0-6) : ");
+	guess = prompt("Ready , aim, fire! (enter a number from 0-7) : ");
 	if (guess < 0 || guess > 7) {
-		alert("Please entaer a valid cell number!");
+		alert("Please enter a valid cell number!");
 	} else {
 		guesses = guesses + 1;
 
