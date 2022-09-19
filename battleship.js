@@ -31,3 +31,17 @@ while (isSunk == false) {
 let stats = "You took " + guesses + " guesses to sink the battleship, " +
 	"which means your shooting accuracy was " + (3 / guesses);
 alert(stats);
+
+
+
+function bark(name, weight) {
+	if (weight > 20) {
+		console.log(name + " says WOOF WOOF");
+	} else {
+		console.log(name + " says woof woof");
+	}
+}
+bark("rover", 23);
+bark("spot", 13);
+bark("spike", 53);
+bark("lady", 17);
