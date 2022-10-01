@@ -21,15 +21,15 @@ while (isSunk == false) {
 			hits = hits + 1;
 			if (hits == 3) {
 				isSunk = true;
-				alert("You sank my battleship!");
+				alert("you sank my battleships!");
 			}
 		} else {
 			alert("MISS!");
 		}
 	}
 }
-let stats = "You took " + guesses + " guesses to sink the battleship, " +
-	"which means your shooting accuracy was " + (3 / guesses);
+/*let stats = "You took " + guesses + " guesses to sink the battleship, " +
+	"which means your shooting accuracy was " + (3 / guesses);*/
 alert(stats);
 
 
