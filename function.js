@@ -9,4 +9,4 @@ function bark(name, weight) {
 bark("rover", 23);
 bark("spot", 13);
 bark("spike", 53);
-bark("lady", 17);
+bark("lady", 18);
