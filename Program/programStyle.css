@@ -1,0 +1,18 @@
+body {
+	background-image: url("https://catherineasquithgallery.com/uploads/posts/2021-02/1614334951_20-p-prosto-raznotsvetnii-fon-26.jpg");
+}
+
+.text {
+	color: blueviolet;
+	font-size: 70px;
+	background-color: aqua;
+	opacity: 80%;
+	text-decoration: underline;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	padding: 40px;
+}
+
+.text:hover {
+	color: brown;
+	text-decoration: none;
+}
