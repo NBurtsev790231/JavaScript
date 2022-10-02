@@ -8,18 +8,15 @@ if (willYou) {
 }
 console.log(typeof willYou);
 
-
 //булевое значение
 let trueOrFalse = 58 > 18;
 console.log(trueOrFalse);
 console.log(typeof trueOrFalse);
 
-
 //строка
 let userName = 'Фрилансер по жизни';
 console.log(userName);
 console.log(typeof userName);
-
 
 //объект
 let userInfo = {
@@ -28,7 +25,6 @@ let userInfo = {
 }
 console.log(userInfo);
 console.log(typeof userInfo);
-
 
 //символ
 let id = Symbol('id');
@@ -64,8 +60,6 @@ userAge2 = Number(userAge2);
 
 console.log(userAge2);
 console.log(typeof userAge2);
-
-
 
 //мороженое
 let scoops = 10;
