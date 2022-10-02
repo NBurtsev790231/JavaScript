@@ -85,6 +85,7 @@ while (i < 4) {
 document.write("Happy Birthday dear" + " " + name + "!");
 
 
+
 //песня тест
 let word = "bottles";
 let count = 99;
