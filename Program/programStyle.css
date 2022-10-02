@@ -2,17 +2,44 @@ body {
 	background-image: url("https://catherineasquithgallery.com/uploads/posts/2021-02/1614334951_20-p-prosto-raznotsvetnii-fon-26.jpg");
 }
 
+.container {
+	width: 1000px;
+}
+
 .text {
-	color: blueviolet;
-	font-size: 70px;
-	background-color: aqua;
-	opacity: 80%;
-	text-decoration: underline;
+	color: #d4d432;
+	font-size: 60px;
+	opacity: 70%;
+	background-color: #a038f5;
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-	padding: 40px;
+	padding: 20px;
+	width: 350px;
+	border-radius: 5%;
+	margin: 20px 500px 25px;
 }
 
 .text:hover {
-	color: brown;
+	color: #ff7581;
 	text-decoration: none;
+}
+
+.section {
+	width: 900px;
+	margin: 0px 250px;
+}
+
+.image {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-evenly;
+	background-color: #a038f5;
+	padding: 10px;
+	border-radius: 5%;
+}
+
+.image img {
+	width: 281px;
+	height: 500px;
+	border-radius: 5%;
 }
