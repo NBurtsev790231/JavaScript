@@ -10,3 +10,4 @@ bark("rover", 23);
 bark("spot", 13);
 bark("spike", 53);
 bark("lady", 18);
+bark("range", 19)
