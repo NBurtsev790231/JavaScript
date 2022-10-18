@@ -11,3 +11,24 @@ bark("spot", 13);
 bark("spike", 53);
 bark("lady", 18);
 bark("range", 19)
+
+//function declaration
+function f1() {
+	console.log("function 1");
+}
+f1() 
+
+//function expression
+let message = function() {
+	console.log("Hello");
+};
+message()
+
+//планирование setTimeout
+function showNumber(num) {
+	console.log(num);
+	if (num < 5) {
+		setTimeout(showNumber, 2000, ++num);
+	}
+}
+setTimeout(showNumber, 1500, 1);
