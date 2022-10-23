@@ -70,3 +70,4 @@ let resultTwo = arrFive.findIndex(function (item, index, array) {
 console.log(resultTwo);
 
 
+
