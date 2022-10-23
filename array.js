@@ -68,3 +68,5 @@ let resultTwo = arrFive.findIndex(function (item, index, array) {
 	return item.age === 21;
 });
 console.log(resultTwo);
+
+
