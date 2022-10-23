@@ -46,6 +46,7 @@ let arrFour = [
 	"Гараж",
 ];
 console.log(arrFour);
+console.log(arrFour.sort());
 console.log(arrFour.indexOf("Душевая"));
 console.log(arrFour.indexOf("Гараж"));
 console.log(arrFour.indexOf("Холодильник"));
@@ -68,5 +69,6 @@ let resultTwo = arrFive.findIndex(function (item, index, array) {
 	return item.age === 21;
 });
 console.log(resultTwo);
+
 
 
