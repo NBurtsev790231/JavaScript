@@ -65,10 +65,64 @@ let result = arrFive.find(function (item, index, array) {
 });
 console.log(result);
 
+//поиск по индексу в массиве
 let resultTwo = arrFive.findIndex(function (item, index, array) {
 	return item.age === 21;
 });
 console.log(resultTwo);
 
+//преобразование массива
+let arrSix = [
+	"Арбуз",
+	"Ананас",
+	"Грейпфрут",
+	"Манго",
+]
+let resultOne = arrSix.map(function (item, index, array) {
+	return item[0];
+});
+console.log(arrSix);
+console.log(resultOne);
 
+//преобразование строки в массив
+let strict = "Ноутбук, планшет, смартфон, наушники";
+let arr = strict.split(",");
+console.log(arr);
 
+//преобразвоание строки в массив с ограничением по эллементам
+let strictTwo = "Ноутбук, планшет, смартфон, наушники";
+let arrStrict = strict.split(",", 3);
+console.log(arrStrict);
+
+//преобразование массива в строку
+let arrEight = [
+	"Микроскоп",
+	"Телескоп",
+	"Калейдоскоп",
+]
+let strictThree = arrEight.join("; ");
+console.log(arrEight);
+console.log(strictThree);
+
+//преобразование массива в строку способ 2
+let arrNine = [
+	"Микроскоп",
+	"Телескоп",
+	"Калейдоскоп",
+]
+console.log(arrNine);
+console.log(String(arrNine));
+
+//функция для проверки массива
+let obj = {};
+let arrTen = [];
+console.log(typeof obj);
+console.log(typeof arrTen);
+
+if (Array.isArray(arrTen)) {
+	console.log("true");
+} else {
+	console.log("false");
+};
+
+ 
