@@ -1,4 +1,5 @@
 "use strict"
+
 let arrOne = [
 	"Яблоко",
 	"Груша",
@@ -125,4 +126,76 @@ if (Array.isArray(arrTen)) {
 	console.log("false");
 };
 
- 
+//методы перебора массива (цикл for)
+let arrEleven = [
+	"Turkey",
+	"Canada",
+	"USA",
+	"Finland",
+];
+console.log(arrEleven);
+console.log(arrEleven.length);
+
+for (let i = 0; i < arrEleven.length; i++) {
+	console.log(arrEleven[i]);
+};
+
+//методы перебора мсссива (цикл for...of)
+let arrTwelve = [
+	"Finland",
+	"USA",
+	"Canada",
+	"Turkey",
+];
+console.log(arrTwelve);
+console.log(arrTwelve.length);
+
+for (let arrItem of arrTwelve) {
+	console.log(arrItem);
+};
+
+//метод перебора массива forEach
+//выполняет функцию для каждого элемента массива
+let arrThirteen = [
+	"Acura",
+	"Toyota",
+	"Range Rover",
+	"BMW",
+];
+console.log(arrThirteen);
+console.log(arrThirteen.length);
+
+arrThirteen.forEach(function (item, index, array) {
+	console.log("${item} находится на ${index} позиции в ${array}");
+});
+//стрелочная функция
+arrThirteen.forEach((item, index, array) => {
+	console.log("${item} находится на ${index} позиции в ${array}");
+});
+
+//второй варинат метода перебора массива forEach
+let arrFourteen = [
+	"Acura",
+	"Toyota",
+	"Range Rover",
+	"BMW",
+];
+arrFourteen.forEach(show);
+function show(item) {
+	console.log(item);
+};
+
+//метод reduce
+let arrFifteen = [1, 2, 3, 4]
+let reduceValueOne = arrFifteen.reduce(function(previousValue, item, index, array) {
+	return item + previousValue;
+}, 0);
+console.log(reduceValueOne);
+
+//метод reduceRight делает все тоже самое, но начинает справа
+let arrSixteen = [5, 6, 7, 8]
+let reduceValueTwo = arrSixteen.reduce(function(previousValue, item, index, array) {
+	return item + previousValue;
+}, 0);
+console.log(reduceValueTwo);
+
