@@ -109,3 +109,69 @@ autoTwo.model = "Defender";
 console.log(auto);
 console.log(autoTwo);
 
+//проверка существования свойства
+let userInfoSeven = {
+	name: "Acie",
+	age: 17,
+	adress: {
+		country: "Turkey",
+		city: "Istanbul",
+	}
+};
+
+if (userInfoSeven.age) {
+	console.log(userInfoSeven.age);
+};
+
+if (userInfoSeven.adress.country) {
+	console.log(userInfoSeven.adress.country);
+};
+
+//проверка существования свойства 2
+let userInfoEight = {
+	name: "Talia",
+	age: 18,
+	adress: {
+		country: "Turkey",
+		city: "Istanbul",
+	}
+};
+console.log(userInfoEight.adress.city);
+
+console.log(userInfoEight?.adress?.city); //оптициональная цепочка проверки
+
+
+//проверка существования свойства через оператора in
+let userInfoNine = {
+	name: "Berk",
+	age: 19,
+	adress: {
+		country: "Turkey",
+		city: "Istanbul",
+	}
+};
+
+if ("name" in userInfoNine) {
+	console.log(userInfoNine.name);
+}
+
+//цикл for...in
+let userInfoTen = {
+	name: "Berk",
+	age: 19,
+	adress: {
+		country: "Turkey",
+		city: "Istanbul",
+	}
+};
+
+for (let key in userInfoTen) { //выводит полные значения объекта
+	console.log(key);
+	console.log(userImfoTen[key]);
+};
+
+for (let key in userInfoTen.adress) { //выводит часть из значений объекта
+	console.log(key);
+	console.log(userInfoTen.adress[key]);
+};
+
