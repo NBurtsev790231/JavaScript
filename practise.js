@@ -1,5 +1,6 @@
 'use strict'
 //array
+
 let a = [1, 2, 3,];
 let b = [4, 5, 6,];
 let result = a.concat(b);
@@ -59,3 +60,34 @@ let obj = {
 }
 console.log(obj);
 console.log(Object.keys(obj));
+
+//object
+
+function sumSalaries(salaries) {
+	let sum = 0;
+	for (let salary of Object.values(salaries)) {
+		sum += salary;
+	}
+	return sum;
+}
+
+let salaries = {
+	Jonn: 100,
+	Ann: 160,
+	Pete: 130.
+}
+console.log(sumSalaries(salaries));
+
+
+let cityOne = {
+	name: 'CityN',
+	population: 1e6,
+};
+console.log(cityOne);
+
+let cityTwo = {
+	name: 'cityM',
+	population: 2e6,
+};
+console.log(cityTwo);
+
