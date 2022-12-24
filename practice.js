@@ -1,5 +1,5 @@
 'use strict'
-/*
+
 let a = 5;
 let b = 10;
 function sum(a, b) {
@@ -27,8 +27,8 @@ function myFn(e, f) {
 	return c;
 }
 console.log(myFn(10, 3));
-*/
-/*
+
+
 let arr = [1, 2, 3, 4, 5, 6, 7,]
 console.log(arr);
 arr.push('a', 'b', 'c',);
@@ -59,7 +59,7 @@ console.log(arrTwo);
 arrTwo.unshift('hello');
 console.log(arrTwo);
 console.log(arrTwo.length);
-*/
+
 
 //не меняет оригинальный массив
 let arrThree = [
