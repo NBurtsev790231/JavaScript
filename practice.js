@@ -28,7 +28,7 @@ function myFn(e, f) {
 }
 console.log(myFn(10, 3));
 */
-
+/*
 let arr = [1, 2, 3, 4, 5, 6, 7,]
 console.log(arr);
 arr.push('a', 'b', 'c',);
@@ -59,15 +59,15 @@ console.log(arrTwo);
 arrTwo.unshift('hello');
 console.log(arrTwo);
 console.log(arrTwo.length);
+*/
 
 //не меняет оригинальный массив
 let arrThree = [
-	1, 2, 3, 4, 5, 
-	6, 7, 8, 9, 10, 
-	12, 13, 14, 15,]
+	1, 2, 3, 4, 5,
+	6, 7, 8, 9, 10,]
 console.log(arrThree);
 //arrThree.forEach(el => console.log(el * 2)); //стрелочная функция
-arrThree.forEach(function(element) {
+arrThree.forEach(function (element) {
 	console.log(element * 2);
 }); //классичесская функция
 
@@ -83,5 +83,9 @@ arrFive.forEach(function (auto) {
 	console.log(auto);
 });
 
+let newArray = arrThree.map(function (element) {
+	console.log(element * 3);
+});
+//console.log(arrThree);
 
 
