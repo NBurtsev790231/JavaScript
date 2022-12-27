@@ -88,4 +88,17 @@ let newArray = arrThree.map(function (element) {
 });
 //console.log(arrThree);
 
+let fruits = ['Apple', 'Chery', 'Pear',]
+console.log(fruits);
+fruits.push('Orange', 'Watermelon');
+console.log(fruits);
+fruits.unshift('Melon');
+console.log(fruits);
+fruits.forEach(function (element) {
+	console.log(element);
+});
+
+let fruitsTwo = fruits.map(function (result) {
+	console.log(result);
+});
 
