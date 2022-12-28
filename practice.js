@@ -1,34 +1,5 @@
 'use strict'
 
-let a = 5;
-let b = 10;
-function sum(a, b) {
-	let c = a + b;
-	console.log(c);
-}
-sum(a, b);
-
-a = 8;
-b = 12;
-sum(a, b);
-
-let c = 2;
-let d = 50;
-function result(c, d) {
-	let e = c * d;
-	console.log(e);
-}
-result(c, d);
-
-function myFn(e, f) {
-	let c;
-	e = e + 1;
-	c = e + f;
-	return c;
-}
-console.log(myFn(10, 3));
-
-
 let arr = [1, 2, 3, 4, 5, 6, 7,]
 console.log(arr);
 arr.push('a', 'b', 'c',);
@@ -98,7 +69,94 @@ fruits.forEach(function (element) {
 	console.log(element);
 });
 
-let fruitsTwo = fruits.map(function (result) {
-	console.log(result);
-});
+let fruitsTwo = fruits.map(result => console.log(result));
 
+//=======================================================
+let people = [
+	{name:'Владилен', age: 25, budget: 40000},
+	{name:'Елена', age: 17, budget: 3400},
+	{name:'Игорь', age: 49, budget: 50000},
+	{name:'Михаил', age: 15, budget: 1800},
+	{name:'Василиса', age: 24, budget: 25000},
+	{name:'Виктория', age: 38, budget: 2300},
+]
+
+/*for (let i = 0; i < people.length; i++) {
+	console.log(people[i]);
+};
+
+for (let person of people) {
+	console.log(person);
+}
+*/
+
+/*
+people.forEach(function (person) {
+	console.log(person);
+})
+*/
+
+//people.forEach(person => console.log(person));
+
+/*
+let newPeople = people.map(function (person) {
+	return `${person.name} (${person.age})`
+})
+console.log(newPeople);
+
+let newPeopleTwo = people.map(person => `${person.name} (${person.age})`);
+console.log(newPeopleTwo);
+*/
+
+let newPeopleThree = people.map(person => console.log(person));
+
+//Filter
+/*
+let adults = []
+for (let i = 0; i < people.length; i++) {
+	if (people[i].age >= 18) {
+		adults.push(people[i])
+	}
+};
+console.log(adults);
+
+
+let adultsTwo = people.filter(person => {
+	if (person.age >= 18) {
+		return true
+	}
+});
+console.log(adultsTwo);
+*/
+
+let adultsThree = people.filter(person => person.age >= 18);
+console.log(adultsThree);
+
+let userBudget = people.filter(person => person.budget >= 20000);
+console.log(userBudget);
+
+let userBudgetTwo = people.filter(person => person.budget <= 30000);
+console.log(userBudgetTwo);
+
+let userName = people.filter(person => person.name === 'Виктория');
+console.log(userName);
+
+//Reduce
+/*
+let amount = 0;
+for (let i =0; i < people.length; i++) {
+	amount += people[i].budget;
+};
+console.log(amount);
+
+let amountTwo = people.reduce((total, person) => {
+	return total + person.budget;
+}, 0);
+console.log(amountTwo);
+*/
+
+let amountThree = people.reduce((total, person) => total + person.budget, 0);
+console.log(amountThree);
+
+let amountFour = people.reduce((total, person) => total + person.budget * 2, 0);
+console.log(amountFour);
