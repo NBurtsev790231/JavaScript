@@ -73,12 +73,12 @@ let fruitsTwo = fruits.map(result => console.log(result));
 
 //=======================================================
 let people = [
-	{name:'Владилен', age: 25, budget: 40000},
-	{name:'Елена', age: 17, budget: 3400},
-	{name:'Игорь', age: 49, budget: 50000},
-	{name:'Михаил', age: 15, budget: 1800},
-	{name:'Василиса', age: 24, budget: 25000},
-	{name:'Виктория', age: 38, budget: 2300},
+	{ name: 'Владилен', age: 25, budget: 40000 },
+	{ name: 'Елена', age: 17, budget: 3400 },
+	{ name: 'Игорь', age: 49, budget: 50000 },
+	{ name: 'Михаил', age: 15, budget: 1800 },
+	{ name: 'Василиса', age: 24, budget: 25000 },
+	{ name: 'Виктория', age: 38, budget: 2300 },
 ]
 
 /*for (let i = 0; i < people.length; i++) {
@@ -160,3 +160,36 @@ console.log(amountThree);
 
 let amountFour = people.reduce((total, person) => total + person.budget * 2, 0);
 console.log(amountFour);
+
+
+let numberArr = [1, 2, 3, 4,];
+console.log(numberArr);
+numberArr.push(5, 6,);
+numberArr.unshift(0,);
+console.log(numberArr);
+
+numberArr.forEach(element => console.log(element));
+let numberArrTwo = numberArr.map(element => console.log(element * 2));
+let numberArrThree = numberArr.filter(element => element <= 3);
+console.log(numberArrThree);
+
+let numberFind = numberArr.find(element => element == 3);
+console.log(numberFind);
+let numberIndex = numberArr.findIndex(element => element == 2);
+console.log(numberIndex);
+
+
+let auto = [
+	{ brand: 'Range Rover', model: 'Sport', age: 2018 },
+	{ brand: 'Toyota', model: 'Camry', age: 2010 },
+	{ brand: 'Kia', model: 'Stinger', age: 2000 },
+	{ brand: 'Kia', model: 'Optima', age: 2020 },
+	{ brand: 'BMW', model: 'M5 Competition', age: 2009 },
+	{ brand: 'Mercedes', model: 'S-class', age: 2001 },
+];
+//auto.forEach(car => console.log(car));
+let autoTwo = auto.map(car => console.log(car));
+let autoFilter = auto.filter(car => car.age === 2020);
+console.log(autoFilter);
+let autoFilterTwo = auto.filter(car => car.age <= 2010);
+console.log(autoFilterTwo);
