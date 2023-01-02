@@ -37,3 +37,5 @@ myAuto.model = 'Sport';
 myAuto.age = 2021
 console.log(myAuto);
 console.log(myAuto.model);
+
+
