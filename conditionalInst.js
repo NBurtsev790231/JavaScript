@@ -42,10 +42,30 @@ if (userAgeTwo < 12) {
 
 let sumPositiveNumbers = (a, b) => {
 	if (typeof a !== 'number' || typeof b !== 'number') {
-		return 'One of arguments is not a number';
+		return ('One of arguments is not a number');
 	}
 	if (a <= 0 || b <= 0) {
-		return 'Numbers are not positive';
+		return ('Numbers are not positive');
 	}
-	return a + b;
+	return (a + b);
 };
+//sumPositiveNumbers(1, 4);
+//sumPositiveNumbers(-5, 3);
+//sumPositiveNumbers('a', true);
+
+
+let month = 2;
+switch (month) {
+	case 12:
+		document.write('December');
+		break
+	case 1:
+		document.write('Yanuary');
+		break
+	case 2:
+		document.write('February');
+		break
+	default:
+		document.write('its not a winter month');
+};
+
