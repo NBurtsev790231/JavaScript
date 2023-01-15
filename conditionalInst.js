@@ -69,3 +69,23 @@ switch (month) {
 		document.write('its not a winter month');
 };
 
+
+let i = 0
+for (i = 0; i < 5; i++) {
+	console.log(i);
+}
+
+
+const myArray = ['developer', 'Javascript', 234, 'abc']
+for (let keys of myArray) {
+	console.log(keys);
+}
+
+
+let a = 0;
+while (a < 5) {
+	a++;
+	console.log(a);
+}
+
+
