@@ -113,4 +113,19 @@ let newNumber = number4.filter(elem => elem < 30);
 console.log(newNumber);
 
 
+//CLONE
+//slice
+let peopleClone = people.slice();
+console.log(peopleClone);
 
+//spread
+let peopleClone2 = [...people]
+console.log(peopleClone2);
+
+//Array.from()
+let peopleClone3 = Array.from(people);
+console.log(peopleClone3);
+
+//Array.concat()
+let peopleClone4 = [].concat(people);
+console.log(peopleClone4);
