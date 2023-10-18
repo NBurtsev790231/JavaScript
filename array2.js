@@ -129,3 +129,12 @@ console.log(peopleClone3);
 //Array.concat()
 let peopleClone4 = [].concat(people);
 console.log(peopleClone4);
+
+//Spred
+const citiesRussia = ['Москва','Казань','Тула','Владивосток']
+const citiesEurope = ['Берлин','Прага','Париж','Рига']
+
+let allCities = [...citiesRussia, ...citiesEurope];
+
+console.log(allCities);
+
