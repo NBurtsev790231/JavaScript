@@ -173,3 +173,31 @@ const mazda = new carTwo('Mazda', 'yellow');
 const tesla = new carTwo('Tesla', 'silver');
 
 console.log(toyota);
+
+
+class Box {
+    constructor(name, age, work) {
+        this.name = name; 
+        this.age = age;
+        this.work = work
+    }
+    hi() {
+        console.log(this.name + this.age + this.work);
+    };
+}
+
+let myBox  = new Box('Maria, ', 22, ' frontend developer');
+
+let myBoxTwo  = new Box('Anna, ', 17, ' UX/Ui designer');
+
+let myBoxThree  = new Box('Elena, ', 20, ' product manager');
+
+myBox.hi();
+myBoxTwo.hi();
+myBoxThree.hi();
+ 
+
+             
+
+
+
