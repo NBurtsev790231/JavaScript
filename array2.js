@@ -138,3 +138,38 @@ let allCities = [...citiesRussia, ...citiesEurope];
 
 console.log(allCities);
 
+//Rest
+function converUSD(rate, ...totals) {
+    return totals.map(total => total/rate);
+}
+const total = converUSD(97, 1000, 800, 6300, 2500, 440, 680);
+
+console.log(total);
+
+
+
+const car = ['Tesla model X', 11, 'red', '50000', '10%', '4wd']
+
+const [name, id, ...options] = car;
+
+console.log(name, id, options);
+
+//Javascript class
+function carTwo(brand, color) {
+    this.brand = brand;
+    this.color = color;
+}
+
+carTwo.prototype.start = function() {
+    console.log(`${this.brand} -start!`);
+}
+carTwo.prototype.start = function() {
+    console.log(`${this.brand} (${this.color}) -start!`);
+}
+
+const toyota = new carTwo('Toyota', 'red');
+const nissan = new carTwo('Nissan', 'black');
+const mazda = new carTwo('Mazda', 'yellow');
+const tesla = new carTwo('Tesla', 'silver');
+
+console.log(toyota);
